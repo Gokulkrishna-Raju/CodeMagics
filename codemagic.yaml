@@ -1,0 +1,12 @@
+workflows:
+  react_native_ios:
+    name: React Native iOS Build and Deployment
+    environment:
+      vars:
+        XCODE_WORKSPACE: "CodeMagics.xcworkspace"
+        XCODE_SCHEME: "CodeMagics"
+        MATCH_PASSWORD: Encrypted(MATCH_PASSWORD)
+      node: latest
+      xcode: latest
+      cocoapods: default
+      ruby: latest
